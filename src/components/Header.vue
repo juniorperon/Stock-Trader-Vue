@@ -47,7 +47,6 @@ export default {
         ...mapActions(['randomizeStocks', 'loadData']),
         endDay() {
             this.randomizeStocks()
-            this.funds -= 100
         },
         saveData() {
             const { funds, stockPortfolio, stocks } = this.$store.getters
